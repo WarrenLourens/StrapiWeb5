@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tesamonials",
+      "handler": "tesamonials.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tesamonials/count",
+      "handler": "tesamonials.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tesamonials/:id",
+      "handler": "tesamonials.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tesamonials",
+      "handler": "tesamonials.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tesamonials/:id",
+      "handler": "tesamonials.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tesamonials/:id",
+      "handler": "tesamonials.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

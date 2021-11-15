@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_custom_logins",
+  "info": {
+    "name": "login",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    }
+  }
+}

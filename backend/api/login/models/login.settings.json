@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "logins",
+  "info": {
+    "name": "Login",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UserName": {
+      "type": "string"
+    },
+    "Password": {
+      "type": "password",
+      "private": true,
+      "required": true,
+      "maxLength": 20,
+      "minLength": 8
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "admin_users": {
+      "plugin": "admin",
+      "collection": "user"
+    }
+  }
+}

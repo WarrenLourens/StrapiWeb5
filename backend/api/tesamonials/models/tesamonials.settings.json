@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tesamonials",
+  "info": {
+    "name": "Testamonials",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tesamonials": {
+      "collection": "tesamonials",
+      "via": "tesamonial"
+    },
+    "tesamonial": {
+      "model": "tesamonials",
+      "via": "tesamonials"
+    },
+    "categories": {
+      "via": "tesamonials",
+      "collection": "category"
+    }
+  }
+}
